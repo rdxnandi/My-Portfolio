@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --radius-custom: 60% 40% 30% 70%/60% 30% 70% 40%;
+  --radius-custom-tow: 30% 60% 70% 40%;
+
+  --animate-typing-blinking: typing 2s steps(20, end) forwards,
+    blinking 0.8s infinite;
+  --animate-fade-in-up: fadeInUp 0.6s ease-out forwards;
+
+  --padding-15px-45px: 15px 45px;
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blinking {
+    from {
+      border-color: transparent;
+    }
+    to {
+      border-color: orange;
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-400, currentColor);
+  }
+}
