@@ -29,7 +29,7 @@ function SocialMediaIcon() {
         <FaSquareXTwitter className="text-orange-300 text-xl" />
       </a>
       <a
-        href="https://www.frontendmentor.io/profil/rdxnandi"
+        href="https://www.frontendmentor.io/profile/rdxnandi"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center border-2 border-orange-300 rounded-full w-[35px] h-[35px]"
