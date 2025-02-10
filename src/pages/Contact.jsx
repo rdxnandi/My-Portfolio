@@ -1,19 +1,31 @@
 import React, { useState } from "react";
 
 function Contact() {
-  const [input, setInput] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const onSubmit = async (event) => {
+    event.preventDefault();
 
-  const handleChange = (e) => {
-    setInput((prev) => ({ ...prev, [e.target.name]: [e.target.value] }));
-  };
+    const form = event.target;
+    const formData = new FormData(form);
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    console.log(input);
+    formData.append("access_key", "45a9ce05-490c-4e44-9918-e1970c713e86");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      // console.log("Success", res);
+
+      form.reset();
+    }
   };
 
   return (
@@ -72,8 +84,6 @@ function Contact() {
           <div className="flex flex-col gap-3">
             <input
               className="lg:w-[500px] h-[50px] font-semibold rounded-lg border-[1px] border-[#212121] outline-hidden bg-orange-200 pl-4 placeholder:text-[#212121] placeholder:font-semibold"
-              value={input.name}
-              onChange={handleChange}
               type="text"
               name="name"
               placeholder="Name*"
@@ -81,8 +91,6 @@ function Contact() {
             />
             <input
               className="lg:w-[500px] h-[50px] font-semibold rounded-lg border-[1px] border-[#212121] outline-hidden bg-orange-200 pl-4 placeholder:text-[#212121] placeholder:font-semibold"
-              value={input.email}
-              onChange={handleChange}
               type="email"
               name="email"
               placeholder="Email*"
@@ -90,8 +98,6 @@ function Contact() {
             />
             <textarea
               className="lg:w-[500px] h-[140px] font-semibold rounded-lg border-[1px] border-[#212121] outline-hidden bg-orange-200 p-4 placeholder:text-[#212121] placeholder:font-semibold"
-              value={input.message}
-              onChange={handleChange}
               name="message"
               placeholder="Message"
               required
