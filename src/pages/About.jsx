@@ -18,14 +18,13 @@ function About() {
           I'm Frontend Developer
         </h1>
         <p className="leading-[1.5] text-center tracking-wide lg:text-justify text-[#414141] text-[18px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          posuere mauris nec vulputate rutrum. Donec molestie augue ut ante
-          tincidunt egestas. Proin velit dolor, lacinia eu pellentesque ut,
-          cursus ac enim. Mauris vitae purus turpis. Pellentesque molestie, ante
-          ac eleifend lobortis, felis tellus elementum ligula, ut commodo odio
-          ante nec nisl. Orci varius natoque penatibus et magnis dis parturient
-          montes, nascetur ridiculus mus. Donec tincidunt est erat, sed
-          hendrerit quam mollis id. Vestibulum eu imperdiet libero.
+          I’m a self-taught web developer passionate about building clean,
+          efficient, and user-friendly web applications. My journey into web
+          development started with curiosity and a drive to create, leading me
+          to master HTML, CSS, JavaScript, React, and Tailwind CSS through
+          hands-on projects and continuous learning. <br /> I love solving
+          problems through code and constantly learning new skills to improve my
+          craft.
         </p>
       </div>
     </section>

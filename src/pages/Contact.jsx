@@ -21,9 +21,6 @@ function Contact() {
       id="contact"
       className="flex min-h-[90vh] p-10 items-center justify-center flex-col bg-orange-100 lg:w-[1000px] m-auto"
     >
-      {/* <h1 className="text-[orange] text-center mb-24 relative text-3xl font-bold after:absolute after:w-[62px] after:h-[5px] after:bg-[orange] after:-bottom-[5px] after:right-3 after:rounded-custom-tow after:transform after:rotate-[-3deg] tracking-wide">
-        Contact
-      </h1> */}
       <div className="w-full flex lg:flex-row flex-col justify-around">
         <div className="flex flex-col transform scale-110 mb-8 lg:mb-0">
           <h1 className="text-[#212121] text-center lg:text-left text-3xl font-bold tracking-wide mb-5">
@@ -46,7 +43,7 @@ function Contact() {
               ></path>
             </svg>
             <a href="#" className="text-[#212121] font-semibold tracking-wide">
-              hello@exapmle.com
+              riktamrdxnandi@gmail.com
             </a>
           </div>
           <div className="flex gap-3 items-center m-auto lg:m-0">
@@ -66,7 +63,7 @@ function Contact() {
               ></path>
             </svg>
             <a href="#" className="text-[#212121] tracking-wide font-semibold">
-              +91 1234567890
+              +91 8637382898
             </a>
           </div>
         </div>
