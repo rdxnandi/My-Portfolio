@@ -10,21 +10,25 @@ function About() {
       <div className="w-[250px] mb-5 lg:mb-0">
         <img src={MainImage} alt={MainImage} className="w-full rounded-lg" />
       </div>
-      <div className="lg:w-[600px] md:w-[500px] w-[300px] md:mb-5 mb-5 lg:mb-0">
+      <div className="lg:w-[650px] md:w-[500px] w-[300px] md:mb-5 mb-5 lg:mb-0">
         <h4 className="mb-4 lg:mb-5 text-center lg:text-left text-[#333] font-extrabold relative lg:text-3xl text-2xl lg:w-fit tracking-wider after:absolute lg:after:w-1/2 after:h-[6px] after:bg-orange-500 after:-bottom-2 after:left-0 after:rounded-md">
           About Me
         </h4>
         <h1 className="mb-4 text-white font-bold text-3xl text-center lg:text-left lg:text-5xl tracking-wide">
-          I'm Frontend Developer
+          I’m a Frontend Developer
         </h1>
         <p className="leading-[1.5] text-center tracking-wide lg:text-justify text-[#414141] text-[18px]">
-          I’m a self-taught web developer passionate about building clean,
-          efficient, and user-friendly web applications. My journey into web
-          development started with curiosity and a drive to create, leading me
-          to master HTML, CSS, JavaScript, React, and Tailwind CSS through
-          hands-on projects and continuous learning. <br /> I love solving
-          problems through code and constantly learning new skills to improve my
-          craft.
+          I’m a <span className="font-semibold">self-taught</span> web developer
+          passionate about building clean, efficient, and user-friendly web
+          applications. My journey into web development started with curiosity
+          and a drive to create, leading me to master{" "}
+          <span className="font-semibold">HTML</span>,{" "}
+          <span className="font-semibold">CSS</span>,{" "}
+          <span className="font-semibold">JavaScript</span>,{" "}
+          <span className="font-semibold">React</span>, and{" "}
+          <span className="font-semibold">Tailwind CSS</span> through hands-on
+          projects and continuous learning. <br /> I love solving problems
+          through code and constantly learning new skills to improve my craft.
         </p>
       </div>
     </section>

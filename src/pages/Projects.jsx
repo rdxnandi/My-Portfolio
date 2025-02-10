@@ -22,7 +22,7 @@ function Projects() {
               href="#"
               className="text-orange-400 hover:underline tracking-wide"
             >
-              View Project →
+              View Project
             </a>
             <a
               href="#"
@@ -45,7 +45,7 @@ function Projects() {
               href="#"
               className="text-orange-400 hover:underline tracking-wide"
             >
-              View Project →
+              View Project
             </a>
             <a
               href="#"
@@ -67,7 +67,7 @@ function Projects() {
               href="#"
               className="text-orange-400 hover:underline tracking-wide"
             >
-              View Project →
+              View Project
             </a>
             <a
               href="#"
@@ -89,7 +89,7 @@ function Projects() {
               href="#"
               className="text-orange-400 hover:underline tracking-wide"
             >
-              View Project →
+              View Project
             </a>
             <a
               href="#"
