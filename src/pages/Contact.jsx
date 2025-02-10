@@ -55,7 +55,7 @@ function Contact() {
               ></path>
             </svg>
             <a
-              href="mailto:riktamrdxnandi@gmailcom"
+              href="mailto:riktamrdxnandi@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#212121] font-semibold tracking-wide"
