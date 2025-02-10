@@ -24,6 +24,9 @@ function SocialMediaIcon() {
       </a>
       <a
         href="#"
+        onClick={(e) => {
+          e.preventDefault();
+        }}
         className="flex items-center justify-center border-2 border-orange-300 rounded-full w-[35px] h-[35px]"
       >
         <FaSquareXTwitter className="text-orange-300 text-xl" />

@@ -20,12 +20,18 @@ function Projects() {
           <div className="flex justify-between">
             <a
               href="#"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Project
             </a>
             <a
               href="#"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Code
@@ -43,12 +49,18 @@ function Projects() {
           <div className="flex justify-between">
             <a
               href="#"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Project
             </a>
             <a
               href="#"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Code
@@ -65,12 +77,18 @@ function Projects() {
           <div className="flex justify-between">
             <a
               href="#"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Project
             </a>
             <a
               href="#"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Code
@@ -87,12 +105,18 @@ function Projects() {
           <div className="flex justify-between">
             <a
               href="#"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Project
             </a>
             <a
               href="#"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Code
