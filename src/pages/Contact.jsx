@@ -1,4 +1,7 @@
-import React, { useRef } from "react";
+import React from "react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { SiFrontendmentor } from "react-icons/si";
 
 function Contact() {
   const onSubmit = async (event) => {
@@ -120,6 +123,43 @@ function Contact() {
             </button>
           </div>
         </form>
+
+        {/* Social link for mobile screen */}
+        <div className="flex gap-3 m-auto mt-7 lg:hidden">
+          <a
+            href="https://www.linkedin.com/in/riktam-nandi-1a0449319/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center border-2 border-orange-300 rounded-full w-[35px] h-[35px]"
+          >
+            <FaLinkedin className="text-orange-300 text-xl" />
+          </a>
+          <a
+            href="https://github.com/rdxnandi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center border-2 border-orange-300 rounded-full w-[35px] h-[35px]"
+          >
+            <FaGithub className="text-orange-300 text-xl" />
+          </a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+            className="flex items-center justify-center border-2 border-orange-300 rounded-full w-[35px] h-[35px]"
+          >
+            <FaSquareXTwitter className="text-orange-300 text-xl" />
+          </a>
+          <a
+            href="https://www.frontendmentor.io/profile/rdxnandi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center border-2 border-orange-300 rounded-full w-[35px] h-[35px]"
+          >
+            <SiFrontendmentor className="text-orange-300 text-xl" />
+          </a>
+        </div>
       </div>
     </section>
   );
