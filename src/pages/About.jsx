@@ -18,17 +18,19 @@ function About() {
           I’m a Frontend Developer
         </h1>
         <p className="leading-[1.5] text-center tracking-wide lg:text-justify text-[#414141] text-[18px]">
-          I’m a <span className="font-semibold">self-taught</span> web developer
-          passionate about building clean, efficient, and user-friendly web
-          applications. My journey into web development started with curiosity
-          and a drive to create, leading me to master{" "}
-          <span className="font-semibold">HTML</span>,{" "}
-          <span className="font-semibold">CSS</span>,{" "}
-          <span className="font-semibold">JavaScript</span>,{" "}
-          <span className="font-semibold">React</span>, and{" "}
-          <span className="font-semibold">Tailwind CSS</span> through hands-on
-          projects and continuous learning. <br /> I love solving problems
-          through code and constantly learning new skills to improve my craft.
+          I’m a{" "}
+          <span className="font-semibold text-[#303030]">self-taught</span> web
+          developer passionate about building clean, efficient, and
+          user-friendly web applications. My journey into web development
+          started with curiosity and a drive to create, leading me to master{" "}
+          <span className="font-semibold text-[#303030]">HTML</span>,{" "}
+          <span className="font-semibold text-[#303030]">CSS</span>,{" "}
+          <span className="font-semibold text-[#303030]">JavaScript</span>,{" "}
+          <span className="font-semibold text-[#303030]">React</span> and{" "}
+          <span className="font-semibold text-[#303030]">Tailwind CSS</span>{" "}
+          through hands-on projects and continuous learning. <br /> I love
+          solving problems through code and constantly learning new skills to
+          improve my craft.
         </p>
       </div>
     </section>
