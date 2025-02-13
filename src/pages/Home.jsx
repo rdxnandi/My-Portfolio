@@ -3,7 +3,7 @@ import MainImage from "../images/avatar1.png";
 
 function Home() {
   return (
-    <section id="home" className="h-screen grid place-items-center">
+    <section id="home" className="h-screen grid place-items-center relative">
       <div className="w-full relative flex justify-evenly">
         <div className="flex flex-col text-[#333] p-7 animate-fade-in-up">
           <h1 className="text-[#333] text-4xl lg:text-5xl mb-2 font-extrabold tracking-wide">
