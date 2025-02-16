@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { SiFrontendmentor } from "react-icons/si";
@@ -36,7 +36,7 @@ function Contact() {
       id="contact"
       className="flex min-h-[90vh] p-10 items-center justify-center flex-col bg-orange-100 lg:w-[1000px] m-auto"
     >
-      <div className="w-full flex lg:flex-row flex-col justify-around">
+      <div className="w-full flex lg:flex-row flex-col justify-around relative">
         <div className="flex flex-col transform scale-110 mb-8 lg:mb-0">
           <h1 className="text-[#212121] text-center lg:text-left text-3xl font-bold tracking-wide mb-5">
             Contact
