@@ -10,6 +10,34 @@ function Projects() {
         Projects
       </h1>
       <div className="lg:w-full w-[300px] grid lg:grid-cols-2 md:grid-cols-2 md:w-full gap-8">
+        {/* E-commerce site */}
+        <div className="border border-orange-400 p-6 rounded-lg shadow-md">
+          <h1 className="text-xl text-[#333] font-semibold mb-2 tracking-wide">
+            E-commerce Site
+          </h1>
+          <p className="mb-4 text-[#333] tracking-wide">
+            A e-commerce site fully developed by react and tailwindcss.
+          </p>
+          <div className="flex justify-between">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
+              className="text-orange-400 hover:underline tracking-wide"
+            >
+              View Project
+            </a>
+            <a
+              href="https://github.com/rdxnandi/ecommerce-website"
+              className="text-orange-400 hover:underline tracking-wide"
+            >
+              View Code
+            </a>
+          </div>
+        </div>
+
+        {/* Responsive Travel Website */}
         <div className="border border-orange-400 p-6 rounded-lg shadow-md">
           <h1 className="text-xl text-[#333] font-semibold mb-2 tracking-wide">
             Responsive Travel
@@ -28,16 +56,15 @@ function Projects() {
               View Project
             </a>
             <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
+              href="https://github.com/rdxnandi/travel-website"
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Code
             </a>
           </div>
         </div>
+
+        {/* Task Manager Site */}
         <div className="border border-orange-400 p-6 rounded-lg shadow-md">
           <h1 className="text-xl text-[#333] font-semibold mb-2 tracking-wide">
             Task Management App
@@ -57,19 +84,18 @@ function Projects() {
               View Project
             </a>
             <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
+              href="https://github.com/rdxnandi/task-manager"
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Code
             </a>
           </div>
         </div>
+
+        {/* Weather Forecast */}
         <div className="border border-orange-400 p-6 rounded-lg shadow-md">
           <h1 className="text-xl text-[#333] font-semibold mb-2 tracking-wide">
-            Weather Dashboard
+            Weather Forecast
           </h1>
           <p className="mb-4 text-[#333] tracking-wide">
             A weather dashboard using OpenWeatherMap API and Chart.js for data.
@@ -77,46 +103,12 @@ function Projects() {
           <div className="flex justify-between">
             <a
               href="#"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Project
             </a>
             <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
-              className="text-orange-400 hover:underline tracking-wide"
-            >
-              View Code
-            </a>
-          </div>
-        </div>
-        <div className="border border-orange-400 p-6 rounded-lg shadow-md">
-          <h1 className="text-xl text-[#333] font-semibold mb-2 tracking-wide">
-            E-commerce Site
-          </h1>
-          <p className="mb-4 text-[#333] tracking-wide">
-            A e-commerce site fully developed by react and tailwindcss.
-          </p>
-          <div className="flex justify-between">
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
-              className="text-orange-400 hover:underline tracking-wide"
-            >
-              View Project
-            </a>
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
+              href="https://github.com/rdxnandi/weather-forecast"
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Code
