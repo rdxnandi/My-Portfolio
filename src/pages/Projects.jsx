@@ -4,7 +4,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen flex flex-col items-center py-7 lg:py-0 px-[180px] md:px-20 justify-center"
+      className="min-h-[80vh] flex flex-col items-center py-7 lg:py-0 px-[180px] md:px-20 justify-center"
     >
       <h1 className="text-[orange] text-center mb-24 relative text-3xl font-bold after:absolute after:w-[62px] after:h-[5px] after:bg-[orange] after:-bottom-2 after:right-3 after:rounded-custom-tow after:transform after:rotate-[-3deg] tracking-wide">
         Projects
