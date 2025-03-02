@@ -20,10 +20,7 @@ function Projects() {
           </p>
           <div className="flex justify-between">
             <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
+              href="https://stylekart-store.vercel.app"
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Project
