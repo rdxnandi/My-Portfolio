@@ -19,6 +19,8 @@ This portfolio website is built using the following technologies:
 
 - Frontend: React.js, Tailwind CSS
 - Backend: Web3Forms (for contact form functionality)
+- Icons: lucide-react, react-icons
+- Animation: framer-motion
 - Deployment: Vercel
 
 ## Live Page
