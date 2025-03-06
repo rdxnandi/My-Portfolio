@@ -92,14 +92,14 @@ function Projects() {
         {/* Weather Forecast */}
         <div className="border border-orange-400 p-6 rounded-lg shadow-md">
           <h1 className="text-xl text-[#333] font-semibold mb-2 tracking-wide">
-            Weather Forecast
+            Landing Page of Tea
           </h1>
           <p className="mb-4 text-[#333] tracking-wide">
             A weather dashboard using OpenWeatherMap API and Chart.js for data.
           </p>
           <div className="flex justify-between">
             <a
-              href="#"
+              href="https://tea-landing-page-opal.vercel.app/"
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Project
