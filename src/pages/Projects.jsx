@@ -44,10 +44,7 @@ function Projects() {
           </p>
           <div className="flex justify-between">
             <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
+              href="https://travel-site-chi-ashen.vercel.app/"
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Project
