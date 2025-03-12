@@ -20,7 +20,7 @@ function Projects() {
           </p>
           <div className="flex justify-between">
             <a
-              href="https://stylekart-store.vercel.app"
+              href="https://stylekart-site.vercel.app"
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Project
