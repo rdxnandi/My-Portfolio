@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <section id="home" className="h-screen grid place-items-center relative">
+    <section
+      id="home"
+      className="h-screen sm:min-h-auto grid place-items-center relative"
+    >
       <div className="w-full relative flex justify-evenly">
         <motion.div
           className="flex flex-col text-[#333] p-7"
