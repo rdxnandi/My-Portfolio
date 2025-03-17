@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       id="about"
-      className="flex lg:flex-row flex-col items-center justify-evenly px-44 min-h-[75vh] bg-orange-200 py-7"
+      className="flex lg:flex-row flex-col items-center justify-evenly px-44 lg:min-h-[75vh] sm:min-h-auto bg-orange-200 py-7"
     >
       <div className="w-[250px] mb-5 lg:mb-0">
         <img src={MainImage} alt={MainImage} className="w-full rounded-lg" />
