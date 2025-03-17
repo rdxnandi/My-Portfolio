@@ -6,7 +6,7 @@ function Home() {
   return (
     <section
       id="home"
-      className="h-screen sm:min-h-auto grid place-items-center relative"
+      className="min-h-screen sm:min-h-auto grid place-items-center relative"
     >
       <div className="w-full relative flex justify-evenly">
         <motion.div
