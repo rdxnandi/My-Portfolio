@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { SiFrontendmentor } from "react-icons/si";
+import Footer from "../components/Footer";
 
 function Contact() {
   const onSubmit = async (event) => {
@@ -34,9 +35,9 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="flex min-h-[90vh] sm:min-h-auto p-10 items-center justify-center flex-col bg-orange-100 lg:w-[1000px] m-auto"
+      className="flex min-h-[90vh] p-10 items-center justify-between flex-col bg-orange-100 lg:w-[1000px] m-auto"
     >
-      <div className="w-full flex lg:flex-row flex-col justify-around relative">
+      <div className="w-full flex lg:flex-row flex-col justify-around relative py-10">
         <div className="flex flex-col transform scale-110 mb-8 lg:mb-0">
           <h1 className="text-[#212121] text-center lg:text-left text-3xl font-bold tracking-wide mb-5">
             Contact
@@ -163,6 +164,7 @@ function Contact() {
           </a>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

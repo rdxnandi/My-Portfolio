@@ -29,7 +29,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="container flex items-center justify-between">
+    <nav className="w-full flex items-center justify-between">
       {/* Logo */}
       <div>
         <a
@@ -98,6 +98,7 @@ function Navbar() {
           </a>
         </li>
       </ul>
+
       <button
         className="lg:hidden cursor-pointer text-[#333]"
         onClick={() => setIsOpen(!isOpen)}

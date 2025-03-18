@@ -2,9 +2,10 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="text-center py-2 shadow-md">
-      <p className="text-[#9a9696]">
-        This project was created, using React(Vite) and TailwindCSS.
+    <footer className="text-center">
+      <p className="text-[#212121] text-[12px] lg:text-sm">
+        Copyright © 2025 <span className="underline">Riktam</span>. All Rights
+        Reserved
       </p>
     </footer>
   );

@@ -5,12 +5,12 @@ function About() {
   return (
     <section
       id="about"
-      className="flex lg:flex-row flex-col items-center justify-evenly px-44 lg:min-h-[75vh] sm:min-h-auto bg-orange-200 py-7"
+      className="flex lg:flex-row flex-col items-center justify-evenly px-44 lg:min-h-[75vh] bg-orange-200 py-7"
     >
       <div className="w-[250px] mb-5 lg:mb-0 sm:mb-0">
         <img src={MainImage} alt={MainImage} className="w-full rounded-lg" />
       </div>
-      <div className="lg:w-[650px] md:w-[500px] w-[300px] md:mb-5 mb-5 lg:mb-0">
+      <div className="sm:w-[500px] lg:w-[650px] md:w-[500px] w-[300px] md:mb-5 mb-5 lg:mb-0">
         <h4 className="mb-4 lg:mb-5 text-center lg:text-left text-[#333] font-extrabold relative lg:text-3xl text-2xl lg:w-fit tracking-wider after:absolute lg:after:w-1/2 after:h-[6px] after:bg-orange-500 after:-bottom-2 after:left-0 after:rounded-md">
           About Me
         </h4>
