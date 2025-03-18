@@ -4,7 +4,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="min-h-[80vh] px-44 py-12 flex flex-col items-center justify-center"
+      className="lg:min-h-[80vh] sm:min-h-auto px-44 py-12 flex flex-col items-center justify-center"
     >
       <h1 className="text-[orange] text-center mb-24 relative text-3xl font-bold after:absolute after:w-[62px] after:h-[5px] after:bg-[orange] after:-bottom-[6px] lg:after:right-3 after:right-28 after:rounded-custom-tow after:transform after:rotate-[-3deg] tracking-wide w-[300px] lg:w-fit">
         My Skills

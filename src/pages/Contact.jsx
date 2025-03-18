@@ -35,7 +35,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="flex min-h-[90vh] p-10 items-center justify-between flex-col bg-orange-100 lg:w-[1000px] m-auto"
+      className="flex lg:min-h-[90vh] sm:min-h-auto p-10 items-center justify-between flex-col bg-orange-100 lg:w-[1000px] m-auto"
     >
       <div className="w-full flex lg:flex-row flex-col justify-around relative py-10">
         <div className="flex flex-col transform scale-110 mb-8 lg:mb-0">
