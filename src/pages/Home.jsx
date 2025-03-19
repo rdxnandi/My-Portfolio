@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function Home() {
   return (
     <section id="home" className="h-screen grid place-items-center relative">
-      <div className="sm:min-h-auto w-full relative flex justify-evenly">
+      <div className="sm:min-h-auto w-full relative flex flex-col md:flex-row justify-evenly items-center">
         <motion.div
           className="flex flex-col text-[#333] p-7"
           initial={{ opacity: 0, y: 100 }}
