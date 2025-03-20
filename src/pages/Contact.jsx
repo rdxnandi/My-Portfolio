@@ -1,35 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { SiFrontendmentor } from "react-icons/si";
 import Footer from "../components/Footer";
+import SendButton from "../components/SendButton";
 
 function Contact() {
+  const [disabled, setDisabled] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState("");
+
   const onSubmit = async (event) => {
     event.preventDefault();
 
     const form = event.target;
     const formData = new FormData(form);
 
-    formData.append("access_key", "45a9ce05-490c-4e44-9918-e1970c713e86");
+    formData.append("access_key", import.meta.env.VITE_ACCESS_KEY);
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    }).then((res) => res.json());
+    setLoading(true);
 
-    if (res.success) {
-      // console.log("Success", res);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      }).then((res) => res.json());
 
-      form.reset();
+      if (res.success) {
+        // console.log("Success", res);
+        setSent(true);
+        form.reset();
+        setTimeout(() => setSent(false), 2000);
+      }
+    } catch (error) {
+      throw error;
+    } finally {
+      setLoading(false);
     }
+  };
+
+  const validateEmail = (value) => {
+    const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+    if (!emailPattern.test(value)) {
+      setError("Please enter a valid email address");
+    } else {
+      setError("");
+    }
+  };
+
+  const handleEmailChange = (event) => {
+    const emailValue = event.target.value;
+    validateEmail(emailValue);
   };
 
   return (
@@ -111,19 +140,16 @@ function Contact() {
               name="email"
               placeholder="Email*"
               required
+              onChange={handleEmailChange}
             />
+            {error && <p className="text-red-500 text-sm">{error}</p>}
             <textarea
               className="lg:w-[500px] h-[140px] font-semibold rounded-lg border-[1px] border-[#212121] outline-hidden bg-orange-200 p-4 placeholder:text-[#212121] placeholder:font-semibold"
               name="message"
               placeholder="Message"
               required
             ></textarea>
-            <button
-              className="p-2 rounded-lg tracking-wider text-orange-400 ml-auto cursor-pointer text-xl"
-              type="submit"
-            >
-              Send
-            </button>
+            <SendButton sent={sent} disabled={disabled} loading={loading} />
           </div>
         </form>
 
