@@ -20,7 +20,7 @@ function Projects() {
           </p>
           <div className="flex justify-between">
             <a
-              href="https://stylekart-site.vercel.app"
+              href="https://stylekart-site.vercel.app/"
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Project
@@ -78,7 +78,10 @@ function Projects() {
               View Project
             </a>
             <a
-              href="https://github.com/rdxnandi/task-manager"
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Code
@@ -102,7 +105,7 @@ function Projects() {
               View Project
             </a>
             <a
-              href="https://github.com/rdxnandi/weather-forecast"
+              href="https://github.com/rdxnandi/tea-landing-page"
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Code
