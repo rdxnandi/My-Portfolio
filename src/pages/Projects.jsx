@@ -40,7 +40,7 @@ function Projects() {
             Responsive Travel
           </h1>
           <p className="mb-4 text-[#333] tracking-wide">
-            It's a fully responsive build with React.
+            It's a fully responsive build with HTML, CSS, and JavaScript.
           </p>
           <div className="flex justify-between">
             <a
@@ -64,24 +64,17 @@ function Projects() {
             Task Management App
           </h1>
           <p className="mb-4 text-[#333] tracking-wide">
-            A React-based task management application with drag-and-drop
-            functionality.
+            A React-based task management website.
           </p>
           <div className="flex justify-between">
             <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
+              href="https://tasksly-task-manager.vercel.app/"
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Project
             </a>
             <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
+              href="https://github.com/rdxnandi/task-manager"
               className="text-orange-400 hover:underline tracking-wide"
             >
               View Code
@@ -92,10 +85,10 @@ function Projects() {
         {/* Weather Forecast */}
         <div className="border border-orange-400 p-6 rounded-lg shadow-md">
           <h1 className="text-xl text-[#333] font-semibold mb-2 tracking-wide">
-            Landing Page of Tea
+            Tea Shop Landing Page
           </h1>
           <p className="mb-4 text-[#333] tracking-wide">
-            A weather dashboard using OpenWeatherMap API and Chart.js for data.
+            A Tea Shop Landing Page using React and Tailwind CSS.
           </p>
           <div className="flex justify-between">
             <a
