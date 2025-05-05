@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MainImage from "../assets/images/avatar1.png";
 import { motion } from "framer-motion";
 
@@ -20,7 +20,7 @@ function Home() {
           </h1>
           <div className="w-fit">
             <div className="text-[#414141] overflow-hidden border-r-4 border-[orange] whitespace-nowrap text-[2rem] lg:text-[2.4em] w-0 animate-typing-blinking">
-              Frontend Developer
+              Web Developer
             </div>
           </div>
           <a

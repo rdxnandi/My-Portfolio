@@ -15,7 +15,7 @@ function About() {
           About Me
         </h4>
         <h1 className="mb-4 text-white font-bold text-3xl text-center lg:text-left lg:text-5xl tracking-wide">
-          I’m a Frontend Developer
+          I’m a Web Developer
         </h1>
         <p className="leading-[1.5] text-center tracking-wide lg:text-justify text-[#414141] text-[18px]">
           I’m a{" "}
