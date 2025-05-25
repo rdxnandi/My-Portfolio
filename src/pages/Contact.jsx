@@ -92,7 +92,7 @@ function Contact() {
                 href="mailto:riktamrdxnandi@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#212121] font-semibold tracking-wide"
+                className="text-[#212121] font-medium tracking-wide"
               >
                 riktamrdxnandi@gmail.com
               </a>
@@ -117,7 +117,7 @@ function Contact() {
                 href="tel:+91-8637382898"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#212121] tracking-wide font-semibold"
+                className="text-[#212121] tracking-wide font-medium"
               >
                 +91 8637382898
               </a>
@@ -128,14 +128,14 @@ function Contact() {
         <form onSubmit={onSubmit}>
           <div className="flex flex-col gap-3">
             <input
-              className="lg:w-[500px] h-[50px] font-semibold rounded-lg border-[1px] border-[#212121] outline-hidden bg-orange-200 pl-4 placeholder:text-[#212121] placeholder:font-semibold"
+              className="lg:w-[500px] h-[50px] font-medium rounded-lg border-[1px] border-[#212121] outline-hidden bg-orange-200 pl-4 placeholder-gray-600 placeholder:font-medium"
               type="text"
               name="name"
               placeholder="Name*"
               required
             />
             <input
-              className="lg:w-[500px] h-[50px] font-semibold rounded-lg border-[1px] border-[#212121] outline-hidden bg-orange-200 pl-4 placeholder:text-[#212121] placeholder:font-semibold"
+              className="lg:w-[500px] h-[50px] font-medium rounded-lg border-[1px] border-[#212121] outline-hidden bg-orange-200 pl-4 placeholder-gray-600 placeholder:font-medium"
               type="email"
               name="email"
               placeholder="Email*"
@@ -144,7 +144,7 @@ function Contact() {
             />
             {error && <p className="text-red-500 text-sm">{error}</p>}
             <textarea
-              className="lg:w-[500px] h-[140px] font-semibold rounded-lg border-[1px] border-[#212121] outline-hidden bg-orange-200 p-4 placeholder:text-[#212121] placeholder:font-semibold"
+              className="lg:w-[500px] h-[140px] font-medium rounded-lg border-[1px] border-[#212121] outline-hidden bg-orange-200 p-4 placeholder-gray-600 placeholder:font-medium"
               name="message"
               placeholder="Message"
               required

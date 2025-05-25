@@ -19,28 +19,46 @@ function About() {
         </h1>
         <p className="leading-[1.5] text-center tracking-wide lg:text-justify text-[#414141] text-[18px]">
           I’m a{" "}
-          <span className="lg:font-semibold font-bold text-[#303030]">
+          <span className="md:font-semibold font-semibold text-[#303030]">
             self-taught
           </span>{" "}
           web developer passionate about building clean, efficient, and
           user-friendly web applications. My journey into web development
           started with curiosity and a drive to create, leading me to master{" "}
-          <span className="lg:font-semibold font-bold text-[#303030]">
+          <span className="md:font-semibold font-semibold text-[#303030]">
             HTML
           </span>
           ,{" "}
-          <span className="lg:font-semibold font-bold text-[#303030]">CSS</span>
+          <span className="md:font-semibold font-semibold text-[#303030]">
+            CSS
+          </span>
           ,{" "}
-          <span className="lg:font-semibold font-bold text-[#303030]">
+          <span className="md:font-semibold font-semibold text-[#303030]">
             JavaScript
           </span>
           ,{" "}
-          <span className="lg:font-semibold font-bold text-[#303030]">
+          <span className="md:font-semibold font-semibold text-[#303030]">
             React
           </span>{" "}
-          and{" "}
-          <span className="lg:font-semibold font-bold text-[#303030]">
+          ,{" "}
+          <span className="md:font-semibold font-semibold text-[#303030]">
             Tailwind CSS
+          </span>{" "}
+          ,{" "}
+          <span className="md:font-semibold font-semibold text-[#303030]">
+            Next.js
+          </span>{" "}
+          ,{" "}
+          <span className="md:font-semibold font-semibold text-[#303030]">
+            Node.js
+          </span>{" "}
+          ,{" "}
+          <span className="md:font-semibold font-semibold text-[#303030]">
+            Express
+          </span>{" "}
+          , and{""}{" "}
+          <span className="md:font-semibold font-semibold text-[#303030]">
+            MongoDB
           </span>{" "}
           through hands-on projects and continuous learning. <br /> I love
           solving problems through code and constantly learning new skills to

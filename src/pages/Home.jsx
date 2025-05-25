@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import MainImage from "../assets/images/avatar1.png";
 import { motion } from "framer-motion";
 
@@ -27,7 +26,7 @@ function Home() {
             href="#projects"
             className="flex items-center justify-center mr-auto mt-5 gap-2 text-[#333] border border-[#555] relative touch-manipulation p-15px-45px after:bg-[#e4b356] after:w-full after:-z-1 after:absolute after:h-full after:top-[7px] after:left-[7px] hover:after:top-0 hover:after:left-0"
           >
-            <span className="text-[16px] tracking-wide font-semibold">
+            <span className="text-[16px] tracking-wide font-medium">
               View My Work
             </span>
             <svg
