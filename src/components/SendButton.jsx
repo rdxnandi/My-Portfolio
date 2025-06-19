@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { Loader2 } from "lucide-react";
 
 function SendButton({ sent, disabled, loading }) {
   return (
@@ -7,7 +7,16 @@ function SendButton({ sent, disabled, loading }) {
       disabled={disabled || loading}
       className="p-2 rounded-lg tracking-wider text-orange-400 ml-auto cursor-pointer text-xl"
     >
-      {loading ? "Sending..." : sent ? "Sent!" : "Send"}
+      {loading ? (
+        <div className="flex items-center gap-2">
+          <Loader2 className="size-5 animate-spin" />
+          Sending...
+        </div>
+      ) : sent ? (
+        "Sent!"
+      ) : (
+        "Send"
+      )}
     </button>
   );
 }

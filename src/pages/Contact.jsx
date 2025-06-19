@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { SiFrontendmentor } from "react-icons/si";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 import SendButton from "../components/SendButton";
 
 function Contact() {
@@ -11,10 +11,10 @@ function Contact() {
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
 
-  const onSubmit = async (event) => {
-    event.preventDefault();
+  const onSubmit = async (e) => {
+    e.preventDefault();
 
-    const form = event.target;
+    const form = e.target;
     const formData = new FormData(form);
 
     formData.append("access_key", import.meta.env.VITE_ACCESS_KEY);
@@ -56,8 +56,8 @@ function Contact() {
     }
   };
 
-  const handleEmailChange = (event) => {
-    const emailValue = event.target.value;
+  const handleEmailChange = (e) => {
+    const emailValue = e.target.value;
     validateEmail(emailValue);
   };
 
